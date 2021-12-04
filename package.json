@@ -1,0 +1,37 @@
+{
+  "name": "image-preview",
+  "version": "1.0.0",
+  "description": "图片预览组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "jsdoc js/image-preview.js -d doc/image-preview && babel js --out-dir lib --source-maps --presets=@babel/preset-env && uglifyjs lib/image-preview.js -m -o lib/image-preview.min.js  --source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kafuu-Chinocya/image-preview.git"
+  },
+  "keywords": [
+    "preview",
+    "预览",
+    "图片预览"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kafuu-Chinocya/image-preview/issues"
+  },
+  "homepage": "https://github.com/Kafuu-Chinocya/image-preview#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-generator": "^6.26.1",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.6.5",
+    "jsdoc": "^3.6.4",
+    "uglify-js": "^3.9.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
